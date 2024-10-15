@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 6</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script src="./js/task6.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="main-title">Задача 6</h1>
+			<p>
+				Користувач задає кількість оцінок і натискає на кнопку «get table». В результаті формується таблиця з input,
+				куди користувач вводить оцінки. Після цього натискає на кнопку “get sum” і знаходить середнє значення.
+			</p>
+			<div class="task">
+				<div class="condition">
+					<div class="calc-line">
+						<label class="label">
+							Price number
+							<input id="numOfScores" type="text" class="input" />
+						</label>
+					</div>
+					<div class="calc-line">
+						<div class="button-wrap">
+							<button id="getTable" class="button">Get table</button>
+						</div>
+					</div>
+				</div>
+				<div class="results">
+					<div id="tablePlace" class="result"></div>
+					<div class="result">
+						<div class="calc-line">
+							<div class="button-wrap">
+								<button id="getAverage" class="button">Get average</button>
+							</div>
+						</div>
+						Sum: <span id="averageScore" class="input">0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

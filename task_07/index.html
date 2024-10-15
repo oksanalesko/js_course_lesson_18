@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 7</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<script src="./js/task7.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="main-title">Задача 7</h1>
+			<p>
+				Подорож складається з 3 етапів. На кожному етапі користувач може вибрати один з видів транспорту (авто,
+				автобус, літак - випадаючий список), харчування (сніданок, обід, вечеря – checkbоx) та одного з 3-х
+				гідів(використати - radio buttons). Ціни визначте самі. Підрахувати загальну вартість.
+			</p>
+			<div class="task">
+				<div class="condition">
+					<h2 class="second-title">Оберіть опції на кожному етапі подорожі</h2>
+					<ul class="travel-stages">
+						<li class="travel-stage">
+							<h3 class="second-title">Етап №1</h3>
+							<div class="travel-option">
+								<h4 class="second-title">Транспорт</h4>
+								<select name="transport" class="transport input">
+									<option value="auto" class="option input">Авто - 900 грн</option>
+									<option value="bus" class="option input">Автобус - 700 грн</option>
+									<option value="plane" class="option input">Літак - 3500 грн</option>
+								</select>
+							</div>
+							<div class="travel-option">
+								<h4 class="second-title">Харчування</h4>
+								<div class="calc-line">
+									<label class="label"
+										>Сніданок 130 грн.
+										<input type="checkbox" name="meal" value="breakfast" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Обід 350 грн.
+										<input type="checkbox" name="meal" value="lunch" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Вечеря 270 грн.
+										<input type="checkbox" name="meal" value="dinner" class="input" />
+									</label>
+								</div>
+							</div>
+							<div class="travel-option">
+								<h4 class="second-title">Гід</h4>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - велика група 100 грн.
+										<input type="radio" name="guide-1" value="1" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - маленька група 200 грн.
+										<input type="radio" name="guide-1" value="2" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - індивідуально 500 грн.
+										<input type="radio" name="guide-1" value="3" class="input" />
+									</label>
+								</div>
+							</div>
+						</li>
+						<li class="travel-stage">
+							<h3 class="second-title">Етап №2</h3>
+							<div class="travel-option">
+								<h4 class="second-title">Транспорт</h4>
+								<select name="transport" class="transport input">
+									<option value="auto" class="option input">Авто - 900 грн</option>
+									<option value="bus" class="option input">Автобус - 700 грн</option>
+									<option value="plane" class="option input">Літак - 3500 грн</option>
+								</select>
+							</div>
+							<div class="travel-option">
+								<h4 class="second-title">Харчування</h4>
+								<div class="calc-line">
+									<label class="label"
+										>Сніданок 130 грн.
+										<input type="checkbox" name="meal" value="breakfast" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Обід 350 грн.
+										<input type="checkbox" name="meal" value="lunch" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Вечеря 270 грн.
+										<input type="checkbox" name="meal" value="dinner" class="input" />
+									</label>
+								</div>
+							</div>
+							<div class="travel-option">
+								<h4 class="second-title">Гід</h4>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - велика група 100 грн.
+										<input type="radio" name="guide-2" value="1" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - маленька група 200 грн.
+										<input type="radio" name="guide-2" value="2" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - індивідуально 500 грн.
+										<input type="radio" name="guide-2" value="3" class="input" />
+									</label>
+								</div>
+							</div>
+						</li>
+						<li class="travel-stage">
+							<h3 class="second-title">Етап №3</h3>
+							<div class="travel-option">
+								<h4 class="second-title">Транспорт</h4>
+								<select name="transport" class="transport input">
+									<option value="auto" class="option input">Авто - 900 грн</option>
+									<option value="bus" class="option input">Автобус - 700 грн</option>
+									<option value="plane" class="option input">Літак - 3500 грн</option>
+								</select>
+							</div>
+							<div class="travel-option">
+								<h4 class="second-title">Харчування</h4>
+								<div class="calc-line">
+									<label class="label"
+										>Сніданок 130 грн.
+										<input type="checkbox" name="meal" value="breakfast" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Обід 350 грн.
+										<input type="checkbox" name="meal" value="lunch" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Вечеря 270 грн.
+										<input type="checkbox" name="meal" value="dinner" class="input" />
+									</label>
+								</div>
+							</div>
+							<div class="travel-option">
+								<h4 class="second-title">Гід</h4>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - велика група 100 грн.
+										<input type="radio" name="guide-3" value="1" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - маленька група 200 грн.
+										<input type="radio" name="guide-3" value="2" class="input" />
+									</label>
+								</div>
+								<div class="calc-line">
+									<label class="label"
+										>Гід - індивідуально 500 грн.
+										<input type="radio" name="guide-3" value="3" class="input" />
+									</label>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="calc-line">
+						<div class="button-wrap">
+							<button id="calc-sum" class="button">Підрахувати суму</button>
+						</div>
+					</div>
+				</div>
+				<div class="results">
+					<div class="result">
+						Загальна сума: <span id="total-sum" class="input">0</span> грн.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
